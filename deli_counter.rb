@@ -16,7 +16,8 @@ end
 
 def take_a_number(katz_deli,name)
   katz_deli.push(name)
-  puts "Welcome, #{name}.  You are number #{(array.size-1)} in line."
+  line_position = katz_deli.size+1
+  puts "Welcome, #{name}.  You are number #{line_position} in line."
 end
 
 def now_serving
