@@ -4,8 +4,8 @@ katz_deli=[]
 def line(katz_deli)
   current_line ="The line is currently: "
   if katz_deli.size > 0
-    katz_deli.each_with_index do |name|
-      current_line=current_line+katz_deli+name
+    katz_deli.each_with_index do |name,index|
+      current_line=current_line+index+". "+name
     end
   else
     current_line = "The line is currently empty."
